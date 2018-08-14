@@ -16,6 +16,7 @@ export default class ToDoList extends Component {
             newArray.push({ title: event.target.value, completed: false, id: keyNumber++, userID: 1 })
             this.setState({ todolist: newArray })
             this.setState({ key: keyNumber++ })
+            event.target.value = null
 
         }
 
